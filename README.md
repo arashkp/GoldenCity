@@ -13,19 +13,29 @@ A simple RESTful API for a Notes application.
 
 ## Test:
 **New Note:**
-curl -X POST http://localhost:3000/notes -H "Content-Type: application/json" -d '{"title":"Note 1","content":"This is a note 1."}'
+    ```bash
+    curl -X POST http://localhost:3000/notes -H "Content-Type: application/json" -d '{"title":"Note 1","content":"This is a note 1."}'
+   ```
 
 **All Note:**
-curl http://localhost:3000/notes
+    ```bash
+    curl http://localhost:3000/notes
+   ```
 
 **Get single note:**
-curl http://localhost:3000/notes/{note_id}
+    ```bash
+    curl http://localhost:3000/notes/{note_id}
+   ```
 
 **Update a note:**
-curl -X PUT http://localhost:3000/notes/{note_id} -H "Content-Type: application/json" -d '{"title":"Note 2","content":"This note has been updated to note 2."}'
-
+    ```bash
+    curl -X PUT http://localhost:3000/notes/{note_id} -H "Content-Type: application/json" -d '{"title":"Note 2","content":"This note has been updated to note 2."}'
+   ```
+   
 **Delete a note:**
-curl -X DELETE http://localhost:3000/notes/{note_id}
+    ```bash
+    curl -X DELETE http://localhost:3000/notes/{note_id}
+   ```
 
 ## Setup
 
